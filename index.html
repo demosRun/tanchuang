@@ -24,8 +24,9 @@
           padding: 0;
       }
       .prop-box {
-        width: 530px;
-        height: 629px;
+        width: 560px;
+        height: 666px;
+        background-size: 100% auto;
         background-image: url('./bg.png');
         position: absolute;
         left: 0;
@@ -55,24 +56,25 @@
       .prop-box h2 {
         line-height: 42px;
         color: #d53444;
+        padding-bottom: 10px;
         border-bottom: 1px solid #ccc;
       }
       .prop-box h4 {
-        line-height: 40px;
+        line-height: 50px;
         font-size: 20px;
         font-weight: normal;
         border-bottom: 1px solid #ccc;
       }
       .conn-1 p {
-        height: 120px;
+        height: 290px;
         overflow: auto;
         border-bottom: 1px solid #ccc;
         margin-bottom: 10px;
         padding: 10px 0px;
         margin-top: 5px;
         text-indent: 2em;
-        font-size: 16px;
-        line-height: 26px;
+        font-size: 18px;
+        line-height: 32px;
       }
       .conn-1 video {
         width: 100%;
@@ -87,28 +89,288 @@
         height: auto;
         cursor: pointer;
       }
+      .conn {
+        display: none;
+      }
+      .conn-bar {
+        display: flex;
+      }
+      .prop-box .conn-2 {
+        margin: 40px 40px;
+      }
+      .conn-2 .left {
+        width: 90px;
+        font-size: 18px;
+        line-height: 40px;
+      }
+      .conn-bar {
+        margin-bottom: 10px;
+      }
+      .right input {
+        height: 40px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        padding: 0 5px;
+        font-size: 16px;
+        width: 365px;
+      }
+      .right textarea {
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        padding: 5px;
+        font-size: 16px;
+        width: 365px;
+        height: 125px;
+      }
+      .conn-bar .right {
+        display: flex;
+        position: relative;
+      }
+      .info-box {
+        color: #c44049;
+      }
+      .info-box span {
+        display: block;
+      }
+      .info-box {
+        margin-left: 10px;
+        margin-top: 35px;
+      }
+      .conn-bar img {
+        height: 80px;
+        max-width: 100%;
+      }
+      .upload-box {
+        width: 95px;
+      }
+      #file {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+      }
+      .tijiao {
+        display: block;
+        margin: 0 auto;
+      }
+      .prop-box-2 {
+        display: block;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        width: 663px;
+        height: 282px;
+        opacity: 1;
+      }
+      .show-button {
+        background-color: #009fe9;
+        color: white;
+        width: 320px;
+        text-align: center;
+        line-height: 36px;
+        margin: 10px;
+        border-radius: 5px;
+      }
   </style>
 
 </head>
 
 <body>
-    <div class="shelter">
+    <div class="shelter" style="display: none;">
         <div class="prop-box">
-            <img class="close-button" src="./close.png">
-            <div class="conn-1">
+            <img class="close-button" src="./close.png" onclick="show3()">
+            <div class="conn conn-1" style="display: block;">
                 <h2>希望为我们村进行亮化工程</h2>
                 <h4>JVH*** &nbsp;&nbsp;2020年11月06日</h4>
                 <p>您好！感谢您百忙之中来看留言！为了白坎村人民群众的出行安全我想诉求以下三个问题：白坎村委到石船村有150米无安装太阳能路灯，晚上没有照明容易给驾驶人造成交通事故。由于部分太阳能灯两边有大量的竹子遮挡了路灯的太阳板，导致晚上的时候是该盏路灯的效果不好，建议村委会对遮挡的11盏灯周围的竹子进行清理。3、屋坪坪村有三处出口与（Y608乡道)连接，但没有安装减速带。领导，您好！感谢您百忙之中来看留言！为了白坎村人民群众的出行安全我想诉求以下三个问题： 1、白坎村委到石船村（Y608乡道)捐资安装的了太阳能路灯，但在途经屋地坪村时约有150米无安装太阳能路灯，导致该路段晚上没有照明，容易给驾驶人造成视野错觉容易引发交通事故。 2、由于部分太阳能灯两边有大量的竹子遮挡了路灯的太阳板，导致晚上的时候是该盏路灯的效果不好，建议村委会雇人或者安排公路养护人员对遮挡的11盏灯周围的竹子进行清理。 3、屋坪坪村有三处出口与（Y608乡道)连接，但没有安装减速带 以上问题我恳请能得到领导您的回复及解决方案。 最后，感谢您在百忙之中能看到我的这些诉求，有打扰到的或做的不对的地方请谅解。</p>
-                <video src="https://cunchu.site/show/mp4/dandelion.mp4" controls="controls"></video>
+                <!-- <video src="https://cunchu.site/show/mp4/dandelion.mp4" controls="controls"></video> -->
                 <div class="button-box">
-                    <img src="./huifu.png">
+                    <img src="./huifu.png" onclick="show1()">
                     <img src="./shoucang.png">
                 </div>
             </div>
-            
+            <div class="conn conn-2">
+              <div class="conn-bar">
+                <div class="left">回复单位</div>
+                <div class="right">
+                  <input type="text" placeholder="请输入单位名称">
+                </div>
+              </div>
+              <div class="conn-bar">
+                <div class="left">图文回复</div>
+                <div class="right">
+                  <textarea placeholder="请输入回复内容"></textarea>
+                </div>
+              </div>
+              <div class="conn-bar tupian">
+                <div class="left"></div>
+                <div class="right">
+                  <div class="upload-box">
+                    <img src="./upload.png">
+                  </div>
+                  <div class="upload-conn">
+                    
+                  </div>
+                  <div class="info-box">
+                    <span>* 上传图片小于5M</span>
+                    <span>* 最多上传4张</span>
+                  </div>
+                  <input type="file" id="file" onchange="readPicture()"/>
+                </div>
+              </div>
+              <div class="conn-bar shipin">
+                <div class="left">视频回复</div>
+                <div class="right">
+                  <div class="upload-box">
+                    <img src="./upload.png">
+                  </div>
+                  <div class="upload-conn">
+                    
+                  </div>
+                  <div class="info-box">
+                    <span>* 上传视频小于50M</span>
+                    <span>* 视频时长少于30秒</span>
+                  </div>
+                  <input type="file" id="file" onchange="document.querySelector('.shipin img').src = './shipin.png'"/>
+                </div>
+              </div>
+              <div class="conn-bar yinpin">
+                <div class="left">音频回复</div>
+                <div class="right">
+                  <div class="upload-box">
+                    <img src="./upload.png">
+                  </div>
+                  <div class="upload-conn">
+                    
+                  </div>
+                  <div class="info-box">
+                    <span>* 上传音频小于50M</span>
+                    <span>* 音频时长少于10分钟</span>
+                  </div>
+                  <input type="file" id="file" onchange="document.querySelector('.yinpin img').src = './yinpin.png'"/>
+                </div>
+              </div>
+              
+              <img class="tijiao" src="./tijiao.png" onclick="show2()">
+            </div>
+        </div>
+        <div class="prop-box-2" style="display: none;">
+          <img onclick="show3()" src="./chengg.png">
         </div>
     </div>
-    
+    <div class="show-button" onclick="show('农民盼农村拆旧复垦补偿款', '世***      2021-08-24 13:37', '我们惠州市龙门县龙潭镇马岭村(马一组马二组马三组）的农村复垦项目，房屋都拆除了一年了，也已复绿验收合格。补偿款迟迟没有到农户手上，不知道什么原因。家里老人年老体弱，经济困难。发展农村，农民也需要资金！希望能早点拿到补偿款。')">农民盼农村拆旧复垦补偿款</div>
+    <div class="show-button" onclick="show('水田被企业以租代征填了土方，没法耕种', '古***      2021-09-12 17:56', '反映一下，我村个人确权水田约70亩和共有的30亩农田水塘被私人以租代征填了土方！水源没了，现在没法耕种，又填埋土方，改了农田使用性质。情况真实，水田都有我们农民的水田确权证明。', '')">水田被企业以租代征填了土方，没法耕种</div>
+    <div class="show-button" onclick="show('关于优化公安机关办理户籍业务的建议', 'Z***      2021-10-09 20:07', '建议深圳市公安局优化户籍管理业务。老百姓在办理户籍、身份证等业务时，需要到外面照相馆拍照再返回办理。希望办事大厅能直接提供拍照服务，避免让老百姓多跑一次。同时，希望政府在规划各项业务流程及功能时多考虑便民。', '')">关于优化公安机关办理户籍业务的建议</div>
+    <div class="show-button" onclick="show('关于小区消防设施老化群众盼及时消除隐患', '网***      2021-10-26 10:27', '潮州市蓝玥湾小区正门人行步道消防设施老化，渗水多日，未见相关单位对其进行维修或更换处理，一来积水多日影响行人通行，二来消防设施老化妨碍小区消防安全，三来公共设施老旧有损城市形象。由衷建议相关部门对该问题给予重视并及时维修，或更换该处及其它存在相似问题的消防设施。', '')">关于小区消防设施老化群众盼及时消除隐患</div>
 </body>
-
+<script>
+  function show (item1, item2, item3 ) {
+    document.querySelector('.conn-1 h2').innerHTML = item1
+    document.querySelector('.conn-1 h4').innerHTML = item2
+    document.querySelector('.conn-1 p').innerHTML = item3
+    document.querySelector('.shelter').style.display = 'block'
+  }
+  function show1 () {
+    document.querySelector('.conn-1').style.display = 'none'
+    document.querySelector('.conn-2').style.display = 'block'
+  }
+  function readPicture(){
+    // 检查是否为图像类型
+    var simpleFile = document.getElementById("file").files[0];
+    if(!/image\/\w+/.test(simpleFile.type)) {
+        alert("请确保文件类型为图像类型");
+        return false;
+    }
+    var reader = new FileReader();
+    // 将文件以二进制文件读入页面中
+    reader.readAsBinaryString(simpleFile);
+    reader.onload = function(f){
+      var result = document.getElementById("result");
+      var src = "data:" + simpleFile.type + ";base64," + window.btoa(this.result);
+      console.log(src)
+      document.querySelector('.tupian img').src = src
+    }
+  }
+  function show2 () {
+    document.querySelector('.prop-box').style.display = 'none'
+    document.querySelector('.prop-box-2').style.display = 'block'
+    setTimeout(() => {
+      show3()
+    }, 3000);
+  }
+  function show3() {
+    document.querySelector('.prop-box').style.display = 'block'
+    document.querySelector('.prop-box-2').style.display = 'none'
+    document.querySelector('.shelter').style.display = 'none'
+    document.querySelector('.conn-1').style.display = 'block'
+    document.querySelector('.conn-2').style.display = 'none'
+    document.querySelector('.conn-2').innerHTML = `<div class="conn-bar">
+                <div class="left">回复单位</div>
+                <div class="right">
+                  <input type="text" placeholder="请输入单位名称">
+                </div>
+              </div>
+              <div class="conn-bar">
+                <div class="left">图文回复</div>
+                <div class="right">
+                  <textarea placeholder="请输入回复内容"></textarea>
+                </div>
+              </div>
+              <div class="conn-bar tupian">
+                <div class="left"></div>
+                <div class="right">
+                  <div class="upload-box">
+                    <img src="./upload.png">
+                  </div>
+                  <div class="upload-conn">
+                    
+                  </div>
+                  <div class="info-box">
+                    <span>* 上传图片小于5M</span>
+                    <span>* 最多上传4张</span>
+                  </div>
+                  <input type="file" id="file" onchange="readPicture()"/>
+                </div>
+              </div>
+              <div class="conn-bar shipin">
+                <div class="left">视频回复</div>
+                <div class="right">
+                  <div class="upload-box">
+                    <img src="./upload.png">
+                  </div>
+                  <div class="upload-conn">
+                    
+                  </div>
+                  <div class="info-box">
+                    <span>* 上传视频小于50M</span>
+                    <span>* 视频时长少于30秒</span>
+                  </div>
+                  <input type="file" id="file" onchange="document.querySelector('.shipin img').src = './shipin.png'"/>
+                </div>
+              </div>
+              <div class="conn-bar yinpin">
+                <div class="left">音频回复</div>
+                <div class="right">
+                  <div class="upload-box">
+                    <img src="./upload.png">
+                  </div>
+                  <div class="upload-conn">
+                    
+                  </div>
+                  <div class="info-box">
+                    <span>* 上传音频小于50M</span>
+                    <span>* 音频时长少于10分钟</span>
+                  </div>
+                  <input type="file" id="file" onchange="document.querySelector('.yinpin img').src = './yinpin.png'"/>
+                </div>
+              </div>
+              
+              <img class="tijiao" src="./tijiao.png" onclick="show2()">`
+  }
+</script>
 </html>
