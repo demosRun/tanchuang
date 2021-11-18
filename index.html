@@ -24,7 +24,7 @@
           padding: 0;
       }
       .prop-box {
-        width: 560px;
+        width: 595px;
         height: 666px;
         background-size: 100% auto;
         background-image: url('./bg.png');
@@ -176,6 +176,10 @@
         margin: 10px;
         border-radius: 5px;
       }
+      input, textarea {
+        font-family: '微软雅黑';
+        outline-color: #c63e46;
+      }
   </style>
 
 </head>
@@ -216,10 +220,6 @@
                   <div class="upload-conn">
                     
                   </div>
-                  <div class="info-box">
-                    <span>* 上传图片小于5M</span>
-                    <span>* 最多上传4张</span>
-                  </div>
                   <input type="file" id="file" onchange="readPicture()"/>
                 </div>
               </div>
@@ -232,10 +232,6 @@
                   <div class="upload-conn">
                     
                   </div>
-                  <div class="info-box">
-                    <span>* 上传视频小于50M</span>
-                    <span>* 视频时长少于30秒</span>
-                  </div>
                   <input type="file" id="file" onchange="document.querySelector('.shipin img').src = './shipin.png'"/>
                 </div>
               </div>
@@ -247,10 +243,6 @@
                   </div>
                   <div class="upload-conn">
                     
-                  </div>
-                  <div class="info-box">
-                    <span>* 上传音频小于50M</span>
-                    <span>* 音频时长少于10分钟</span>
                   </div>
                   <input type="file" id="file" onchange="document.querySelector('.yinpin img').src = './yinpin.png'"/>
                 </div>
@@ -330,10 +322,6 @@
                   <div class="upload-conn">
                     
                   </div>
-                  <div class="info-box">
-                    <span>* 上传图片小于5M</span>
-                    <span>* 最多上传4张</span>
-                  </div>
                   <input type="file" id="file" onchange="readPicture()"/>
                 </div>
               </div>
@@ -346,10 +334,6 @@
                   <div class="upload-conn">
                     
                   </div>
-                  <div class="info-box">
-                    <span>* 上传视频小于50M</span>
-                    <span>* 视频时长少于30秒</span>
-                  </div>
                   <input type="file" id="file" onchange="document.querySelector('.shipin img').src = './shipin.png'"/>
                 </div>
               </div>
@@ -361,10 +345,6 @@
                   </div>
                   <div class="upload-conn">
                     
-                  </div>
-                  <div class="info-box">
-                    <span>* 上传音频小于50M</span>
-                    <span>* 音频时长少于10分钟</span>
                   </div>
                   <input type="file" id="file" onchange="document.querySelector('.yinpin img').src = './yinpin.png'"/>
                 </div>
